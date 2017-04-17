@@ -582,11 +582,14 @@ html a.tag:hover {
 }
 
 .cover-content .cover-avatar {
-  width: 5rem;
-  height: 5rem;
+  position: absolute;
+  z-index: 2;
+  bottom: -3rem;
+  left: calc(50% - 3%);
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 1rem auto;
+  border: solid .15rem white;
 }
 
 .cover .cover-title {

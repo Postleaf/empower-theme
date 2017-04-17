@@ -31,7 +31,7 @@
       <div class="cover-body">
         <div class="cover-content body-wrap">
           {?avatar}
-            <img class="cover-avatar" src={@dynamicImage src=avatar thumbnail="200"/} alt="{name}">
+            <img class="cover-avatar" src={@dynamicImage src=avatar thumbnail="250"/} alt="{name}">
           {/avatar}
           <h1 class="cover-title">
             {name}
