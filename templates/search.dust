@@ -1,0 +1,66 @@
+{! Use the default layout !}
+{>"layout"/}
+
+{! This is the body of the blog index, which will get rendered by the {+body/} of the layout !}
+{<body}
+
+  {! Switch to the author context !}
+  {! Cover header !}
+  <header
+    {?Settings.cover}
+      class="cover has-cover"
+      style="background-image: url('{@dynamicImage src=Settings.cover width="2000" colorize="75,75,75"/}');"
+    {:else}
+      class="cover no-cover"
+    {/Settings.cover}
+  >
+    {! Site logo !}
+    {?Settings.logo}
+      <a class="cover-logo" href="{@url/}">
+        <img src="{@url path=Settings.logo/}" alt="{Settings.title}">
+      </a>
+    {/Settings.logo}
+
+    {! Navicon !}
+    <button class="nav-toggle" type="button" role="button" aria-label="Toggle Navigation">
+      <div class="navicon"><span hidden>Menu</span></div>
+    </button>
+
+    {! Cover body !}
+    <div class="cover-body">
+      <div class="cover-content body-wrap">
+        {^query}
+          <h1 class="cover-title">Search</h1>
+          <p>What are you looking for?</p>
+        {:else}
+          <h1 class="cover-title">Results for “{query}”</h1>
+          <p>{@plural count=pagination.totalItems one="1 post" many="% posts" none="No posts"/}</p>
+        {/query}
+      </div>
+    </div>
+  </header>
+
+  {! Are there any results? !}
+  {@gt key=pagination.totalItems value="0"}
+    {! Include the post loop !}
+    {>"partials/loop"/}
+
+    {! Include pagination !}
+    {>"partials/pagination"/}
+  {/gt}
+
+  {! Search form !}
+  <form class="search-form" action="{@url type="search"/}" autocomplete="off">
+    <div class="body-wrap">
+      {?query}
+        Search again?
+      {/query}
+      <input type="search" name="s" placeholder="Search">
+      <button type="submit">Go</button>
+    </div>
+  </form>
+
+  {! Include the footer !}
+  {>"partials/footer"/}
+
+{/body}

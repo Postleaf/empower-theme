@@ -1,0 +1,48 @@
+{! Next / previous post !}
+<section class="post-suggested">
+  <div class="row">
+    {@getNextPost}
+      {#post}
+        <a
+          href="{@url type="post" slug=slug/}"
+          class="two-column post-suggested-post post-suggested-next"
+          {?image}
+            style="background-image: url('{@dynamicImage src=image width="2000" colorize="75,75,75"/}');"
+          {/image}
+        >
+          <div class="post-suggested-body body-wrap">
+            <span class="post-suggested-subtitle">Next Post</span>
+            <h2 class="post-suggested-title">{title}</h2>
+            <div class="post-suggested-excerpt">
+              Posted {@date date=publishedAt relative="true"/}
+              &middot;
+              {@readingTime/} min read
+            </div>
+          </div>
+        </a>
+      {/post}
+    {/getNextPost}
+
+    {@getNextPost previous="true"}
+      {#post}
+        <a
+          href="{@url type="post" slug=slug/}"
+          class="two-column post-suggested-post post-suggested-prev"
+          {?image}
+            style="background-image: url('{@dynamicImage src=image width="2000" colorize="75,75,75"/}');"
+          {/image}
+        >
+          <div class="post-suggested-body body-wrap">
+            <span class="post-suggested-subtitle">You Might Enjoy</span>
+            <h2 class="post-suggested-title">{title}</h2>
+            <div class="post-suggested-excerpt">
+              Posted {@date date=publishedAt relative="true"/}
+              &middot;
+              {@readingTime/} min read
+            </div>
+          </div>
+        </a>
+      {/post}
+    {/getNextPost}
+  </div>
+</section>

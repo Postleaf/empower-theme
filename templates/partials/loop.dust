@@ -1,0 +1,46 @@
+{! Post loop !}
+<div class="loop">
+
+  {! Iterate over each post !}
+  {#posts}
+    <div class="loop-item {?isFeatured}loop-item-featured{/isFeatured}">
+      <div class="loop-item-body body-wrap">
+        {! Title !}
+        <h2 class="loop-title">
+          <a href="{@url type="post" slug=slug/}">{title}</a>
+        </h2>
+
+        {! Excerpt !}
+        <div class="loop-excerpt">
+          {@excerpt paragraphs="2"/}
+        </div>
+
+        {! Tags !}
+        {?tags}
+          <div class="loop-tags">
+            {#tags}
+              <a href="{@url type="tag" slug=slug/}" class="tag">{name}</a>
+            {/tags}
+          </div>
+        {/tags}
+
+        {! Meta !}
+        <div class="loop-meta">
+          {! Author !}
+          <a href="{@url type="author" username=author.username/}" class="loop-author">
+            {?author.avatar}
+              <img src="{@dynamicImage src=author.avatar thumbnail="100"/}" alt="{author.name}">
+            {/author.avatar}
+            {author.name}
+          </a>
+
+          {! Post date !}
+          <a href="{@url type="post" slug=slug/}" class="loop-date">
+            {@date date=publishedAt format="LL"/}
+          </a>
+        </div>
+      </div>
+    </div>
+  {/posts}
+
+</div>

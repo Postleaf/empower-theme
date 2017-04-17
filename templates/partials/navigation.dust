@@ -1,0 +1,62 @@
+{! Navigation menu !}
+<div class="nav">
+  {! Meta !}
+  <div class="nav-block nav-meta">
+    {?Settings.logo}
+      <a class="nav-logo" href="{@url/}">
+        <img src="{@url path=Settings.logo/}" alt="{Settings.title}">
+      </a>
+    {:else}
+      <h1 class="nav-title">{Settings.title}</h1>
+    {/Settings.logo}
+
+    <div class="nav-tagline">
+      {Settings.tagline}
+    </div>
+  </div>
+
+  {! Menu items !}
+  <nav class="nav-block nav-menu">
+    {! Fetch the site's navigation !}
+    {@navigation}
+      {! Output each menu item. We can use `isCurrent` to detect the current page !}
+      <a class="nav-menu-{slug} {@urlCompare url=link}current{/urlCompare}" href="{@url path=link/}">
+        {label}
+      </a>
+    {/navigation}
+  </nav>
+
+  {! Search !}
+  <form class="nav-block nav-search" action="{@url type="search"/}" autocomplete="off">
+    <h3>Search</h3>
+    <input type="search" name="s" placeholder="Search">
+  </form>
+
+  {! Tags !}
+  <div class="nav-block nav-tags clearfix">
+    <h3>Tags</h3>
+
+    {@getTags sortBy="name"}
+      {#tags}
+        <a class="tag" href="{@url type="tag" slug=slug/}">{name}</a>
+      {/tags}
+    {:else}
+
+    {/getTags}
+  </div>
+
+  {! Share !}
+  <div class="nav-block nav-share clearfix">
+    <h3>Share</h3>
+    <a class="share-button share-button-twitter" href="https://twitter.com/intent/tweet?text={Settings.title|uc}&amp;url={@url absolute="true"/}">Twitter</a>
+    <a class="share-button share-button-facebook" href="https://www.facebook.com/sharer/sharer.php?u={@url absolute="true"/}">Facebook</a>
+    <a class="share-button share-button-gp" href="https://plus.google.com/share?url={@url absolute="true"/}">Google+</a>
+    <a class="share-button share-button-email" href="mailto:?subject={Settings.title|uc}&amp;body=I%20thought%20you%20might%20like%20this%20website%3A%20{@url absolute="true"/}">Email</a>
+  </div>
+
+  {! Copyright !}
+  <div class="nav-block nav-copyright">
+    <p><a href="{@url/}">&copy;{@date format="Y"/} {Settings.title}</a></p>
+    <p class="nav-published-with"><a href="https://www.postleaf.org">Published with Postleaf</a></p>
+  </div>
+</div>

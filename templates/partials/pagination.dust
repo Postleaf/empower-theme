@@ -1,0 +1,28 @@
+{! Only show pagination if there's more than one page !}
+{@gt key=pagination.totalPages value=1}
+
+  <div class="pagination">
+    <div class="pagination-body body-wrap">
+      <div class="pagination-previous">
+        {! Link to the previous page !}
+        {?pagination.prevPage}
+          <a href="{pagination.prevPageUrl}">Newer Posts</a>
+        {/pagination.prevPage}
+      </div>
+
+      {! Show the current page and total pages !}
+      <div class="pagination-current">
+        Page {@formatNumber number=pagination.currentPage/}
+        of {@formatNumber number=pagination.totalPages/}
+      </div>
+
+      <div class="pagination-next">
+        {! Link to the next page !}
+        {?pagination.nextPage}
+          <a href="{pagination.nextPageUrl}">Older Posts</a>
+        {/pagination.nextPage}
+      </div>
+    </div>
+  </div>
+
+{/gt}

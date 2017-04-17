@@ -1,0 +1,53 @@
+{! Use the default layout !}
+{>"layout"/}
+
+{! This is the body of the blog index, which will get rendered by the {+body/} of the layout !}
+{<body}
+
+  {! Switch to the author context !}
+  {#tag}
+    {! Cover header !}
+    <header
+      {?image}
+        class="cover has-cover"
+        style="background-image: url('{@dynamicImage src=image width="2000" colorize="75,75,75"/}');"
+      {:else}
+        class="cover no-cover"
+      {/image}
+    >
+      {! Site logo !}
+      {?Settings.logo}
+        <a class="cover-logo" href="{@url/}">
+          <img src="{@url path=Settings.logo/}" alt="{Settings.title}">
+        </a>
+      {/Settings.logo}
+
+      {! Navicon !}
+      <button class="nav-toggle" type="button" role="button" aria-label="Toggle Navigation">
+        <div class="navicon"><span hidden>Menu</span></div>
+      </button>
+
+      {! Cover body !}
+      <div class="cover-body">
+        <div class="cover-content body-wrap">
+          <h1 class="cover-title">
+            {name}
+          </h1>
+          {! Tag descriptions are stored as markdown, so we use the |markdownToHtml filter to
+            convert them to HTML, then the |s filter so they don't get escaped. !}
+          {description|markdownToHtml|s}
+        </div>
+      </div>
+    </header>
+  {/tag}
+
+  {! Include the post loop !}
+  {>"partials/loop"/}
+
+  {! Include pagination !}
+  {>"partials/pagination"/}
+
+  {! Include the footer !}
+  {>"partials/footer"/}
+
+{/body}

@@ -1,0 +1,42 @@
+{! Use the default layout !}
+{>"layout"/}
+
+{! This is the body of the blog index, which will get rendered by the {+body/} of the layout !}
+{<body}
+
+  {! Cover header !}
+  <header
+    {?Settings.cover}
+      class="cover cover-full has-cover"
+      style="background-image: url('{@dynamicImage src=Settings.cover width="2000" colorize="75,75,75"/}');"
+    {:else}
+      class="cover no-cover"
+    {/Settings.cover}
+  >
+    {! Site logo !}
+    {?Settings.logo}
+      <a class="cover-logo" href="{@url/}">
+        <img src="{@url path=Settings.logo/}" alt="{Settings.title}">
+      </a>
+    {/Settings.logo}
+
+    {! Navicon !}
+    <button class="nav-toggle" type="button" role="button" aria-label="Toggle Navigation">
+      <div class="navicon"><span hidden>Menu</span></div>
+    </button>
+
+    {! Cover body !}
+    <div class="cover-body">
+      <div class="cover-content body-wrap">
+        <h1 class="cover-title">Not Found</h1>
+        <p>The page you requested doesn’t exist.</p>
+      </div>
+    </div>
+
+    {! Continue !}
+    <button type="button" class="cover-continue">
+      <span hidden>Continue</span>
+    </button>
+  </header>
+
+{/body}

@@ -1,0 +1,10 @@
+{
+  "name": "Empower",
+  "description": "The default theme for Postleaf.",
+  "version": "1.0.0",
+  "author": "Cory LaViska",
+  "organization": "A Beautiful Site, LLC",
+  "license": "MIT",
+  "url": "https://www.postleaf.org/",
+  "image": "images/theme.jpg"
+}

@@ -1,0 +1,11 @@
+{! Footer !}
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <a href="{@url/}">&copy;{@date format="Y"/} {Settings.title}</a>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.postleaf.org">Published with Postleaf</a>
+    </div>
+  </div>
+</footer>

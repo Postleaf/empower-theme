@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{meta.title}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{meta.description}">
+  <link rel="icon" href="{@dynamicImage src=Settings.favicon thumbnail="256"/}">
+  <link rel="apple-touch-icon" href="{@dynamicImage src=Settings.favicon thumbnail="256"/}">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Montserrat:400" rel="stylesheet" type="text/css">
+
+  {! Custom styles !}
+  <link rel="stylesheet" href="{@url type="theme" path="css/styles.css"/}">
+
+  {! The head helper is required and should always appear before the closing head tag !}
+  {@head/}
+</head>
+
+{! The bodyClass helper adds useful classes to the body of each template !}
+<body class="{@bodyClass/}">
+
+  {! Include the navigation menu !}
+  {>"partials/navigation"/}
+
+  <main class="page-wrap">
+
+    {! The content of each template will be rendered here !}
+    {+body/}
+
+  </main>
+
+  {! Load jQuery via CDN !}
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  {! Custom scripts !}
+  <script src="{@url type="theme" path="js/scripts.js"/}"></script>
+
+  {! The foot helper is required and should always appear before the closing body tag !}
+  {@foot/}
+</body>
+</html>
