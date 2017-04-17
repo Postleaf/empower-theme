@@ -314,7 +314,7 @@ html a.tag:hover {
   position: relative;
   width: 1.5rem;
   height: 5px;
-  background: white;
+  background-color: white;
   transition: .3s;
   border-radius: 2px;
 }
@@ -329,6 +329,13 @@ html a.tag:hover {
   background: white;
   transition: .3s;
   border-radius: 2px;
+}
+
+/* Navicon should be black when no cover is present */
+.no-cover .navicon,
+.no-cover .navicon::before,
+.no-cover .navicon::after {
+  background-color: #484848;
 }
 
 .navicon::before {
@@ -545,9 +552,10 @@ html a.tag:hover {
   width: 100%;
   height: 100%;
   height: 50vh;
-  background-color: #2c2c2c;
+  background-color: #f8f8f8;
   font-family: Montserrat, sans-serif;
   font-size: .9rem;
+  color: #888;
   display: table;
 }
 
@@ -573,10 +581,6 @@ html a.tag:hover {
   display: block;
 }
 
-.cover-content {
-  color: rgba(255, 255, 255, .8);
-}
-
 .cover-content .cover-avatar {
   width: 5rem;
   height: 5rem;
@@ -585,10 +589,9 @@ html a.tag:hover {
   margin: 0 auto 1rem auto;
 }
 
-.cover-content .cover-title {
+.cover .cover-title {
   line-height: 1.2;
   font-size: 3rem;
-  color: white;
 }
 
 .cover-content :last-child {
@@ -597,9 +600,14 @@ html a.tag:hover {
 
 /* Cover with cover photo */
 .cover.has-cover {
+  color: rgba(255, 255, 255, .8);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.cover.has-cover .cover-title {
+  color: white;
 }
 
 /* Cover with full height has larger subtitle text */
@@ -614,7 +622,7 @@ html a.tag:hover {
   padding: 5rem 0 0 0;
 }
 
-.template-post .cover.no-cover .cover-content .cover-title {
+.template-post .cover.no-cover .cover-title {
   color: #383838;
 }
 
@@ -1204,6 +1212,7 @@ html a.tag:hover {
 .post-suggested-post {
   font-family: Montserrat, sans-serif;
   font-size: .8rem;
+  color: #484848;
   text-align: center;
   text-decoration: none;
   background-color: #f8f8f8;
@@ -1237,13 +1246,12 @@ html a.tag:hover {
   margin-bottom: 0rem;
 }
 
-/* Suggested posts with a cover photo */
-
-.post-suggested-post[style] {
+/* Suggested posts with a cover photo get lighter text */
+.post-suggested-post[data-cover="true"] {
   color: rgba(255, 255, 255, .8);
 }
 
-.post-suggested-post[style] .post-suggested-title {
+.post-suggested-post[data-cover="true"] .post-suggested-title {
   color: white;
 }
 

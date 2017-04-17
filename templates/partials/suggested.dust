@@ -7,6 +7,7 @@
           href="{@url type="post" slug=slug/}"
           class="two-column post-suggested-post post-suggested-next"
           {?image}
+            data-cover="true"
             style="background-image: url('{@dynamicImage src=image width="2000" colorize="75,75,75"/}');"
           {/image}
         >
@@ -29,6 +30,7 @@
           href="{@url type="post" slug=slug/}"
           class="two-column post-suggested-post post-suggested-prev"
           {?image}
+            data-cover="true"
             style="background-image: url('{@dynamicImage src=image width="2000" colorize="75,75,75"/}');"
           {/image}
         >
