@@ -585,7 +585,7 @@ html a.tag:hover {
   position: absolute;
   z-index: 2;
   bottom: -3rem;
-  left: calc(50% - 3%);
+  left: calc(50% - 3rem);
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -677,6 +677,13 @@ html a.tag:hover {
   .cover-logo {
     top: 1rem;
     left: 1rem;
+  }
+
+  .cover-content .cover-avatar {
+    bottom: -2rem;
+    left: calc(50% - 2rem);
+    width: 4rem;
+    height: 4rem;
   }
 
 }
