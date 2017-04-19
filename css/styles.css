@@ -637,6 +637,7 @@ html a.tag:hover {
   width: 1.5rem;
   height: 1.5rem;
   background: transparent;
+  padding: 0;
   border: none;
   cursor: pointer;
   display: none;
