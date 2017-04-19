@@ -6,5 +6,9 @@
   "organization": "A Beautiful Site, LLC",
   "license": "MIT",
   "url": "https://www.postleaf.org/",
-  "image": "images/theme.jpg"
+  "image": "images/theme.jpg",
+  "customPostTemplates": [
+    { "name": "Micro", "filename": "post.micro.dust" },
+    { "name": "Page", "filename": "post.page.dust" }
+  ]
 }
