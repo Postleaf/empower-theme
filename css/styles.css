@@ -1018,6 +1018,15 @@ html a.tag:hover {
   max-width: 100%;
 }
 
+figure.image {
+  display: block;
+}
+
+figure.image img {
+  width: 100%;
+  display: block;
+}
+
 /* Images without alignment */
 .post figure.image:not(.align-left):not(.align-right):not(.align-center) {
   width: calc(100% + 8rem);
