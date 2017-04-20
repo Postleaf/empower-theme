@@ -933,15 +933,15 @@ html a.tag:hover {
   margin-bottom: 2rem;
 }
 
-.post h1,
 .post h2,
-.post h3 {
+.post h3,
+.post h4 {
   line-height: 1.2;
 }
 
-.post h1:not(:first-child),
 .post h2:not(:first-child),
-.post h3:not(:first-child) {
+.post h3:not(:first-child),
+.post h4:not(:first-child) {
   margin-top: 3rem;
 }
 
@@ -1020,6 +1020,15 @@ html a.tag:hover {
 /* Post images */
 .post img {
   max-width: 100%;
+}
+
+figure.image {
+  display: block;
+}
+
+figure.image img {
+  width: 100%;
+  display: block;
 }
 
 /* Images without alignment */
