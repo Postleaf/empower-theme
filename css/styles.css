@@ -619,13 +619,17 @@ html a.tag:hover {
 }
 
 /* Cover without photo on post page is plain white  */
-.template-post .cover.no-cover {
+.template-post .cover.no-cover,
+.template-post-micro .cover.no-cover,
+.template-post-page .cover.no-cover {
   height: auto;
   background: white;
   padding: 5rem 0 0 0;
 }
 
-.template-post .cover.no-cover .cover-title {
+.template-post .cover.no-cover .cover-title,
+.template-post-micro .cover.no-cover .cover-title,
+.template-post-page .cover.no-cover .cover-title {
   color: #383838;
 }
 
