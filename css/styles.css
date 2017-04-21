@@ -1242,11 +1242,11 @@ figure.image img {
   transition: .2s transform;
 }
 
-.post-suggested-next {
+.post-suggested-next:not(:last-child) {
   border-right: solid .15rem white;
 }
 
-.post-suggested-prev {
+.post-suggested-prev:not(:first-child) {
   border-left: solid .15rem white;
 }
 
