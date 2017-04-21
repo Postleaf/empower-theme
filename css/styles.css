@@ -264,7 +264,7 @@ pre {
 
 /* Tags */
 html a.tag {
-  background-color: #09d;
+  background-color: #8cc152;
   color: white;
   font-family: Montserrat, sans-serif;
   font-size: .6rem;
@@ -278,7 +278,7 @@ html a.tag {
 
 html a.tag:hover {
   color: white;
-  background-color: #0080c4;
+  background-color: #73a839;
 }
 
 /***************************************************************************************************
@@ -485,15 +485,9 @@ html a.tag:hover {
 /* Tag list */
 .nav-tags .tag {
   float: left;
-  background-color: #8cc152;
-  color: white;
   padding: .5rem;
   margin-right: .25rem;
   margin-bottom: .25rem;
-}
-
-.nav-tags .tag:hover {
-  background-color: #73A839;
 }
 
 /* Share */
