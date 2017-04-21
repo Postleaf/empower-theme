@@ -1242,6 +1242,14 @@ figure.image img {
   transition: .2s transform;
 }
 
+.post-suggested-next {
+  border-right: solid .15rem white;
+}
+
+.post-suggested-prev {
+  border-left: solid .15rem white;
+}
+
 /* Hover effects for prev/next posts */
 .post-suggested:hover .post-suggested-post:not(:hover) {
   transform: scale(.95);
