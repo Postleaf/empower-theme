@@ -55,6 +55,31 @@ h3 {
   font-size: 1.75rem;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 2;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1.25rem;
@@ -677,6 +702,10 @@ html a.tag:hover {
   .cover-logo {
     top: 1rem;
     left: 1rem;
+  }
+
+  .cover .cover-title {
+    font-size: 2rem;
   }
 
   .cover-content .cover-avatar {
