@@ -29,14 +29,9 @@
     <div class="cover-body">
       <div class="cover-content body-wrap">
         <h1 class="cover-title">Not Found</h1>
-        <p>The page you requested doesn’t exist.</p>
+        The page you requested doesn’t exist.
       </div>
     </div>
-
-    {! Continue !}
-    <button type="button" class="cover-continue">
-      <span hidden>Continue</span>
-    </button>
   </header>
 
 {/body}

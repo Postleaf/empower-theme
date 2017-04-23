@@ -569,7 +569,6 @@ html a.tag:hover {
   height: 50vh;
   background-color: #f8f8f8;
   font-family: Montserrat, sans-serif;
-  font-size: .9rem;
   color: #888;
   display: table;
 }
@@ -604,12 +603,13 @@ html a.tag:hover {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  border: solid .15rem white;
+  border: solid .2rem white;
 }
 
 .cover .cover-title {
   line-height: 1.2;
   font-size: 3rem;
+  margin-bottom: .25rem;
 }
 
 .cover-content :last-child {
@@ -704,10 +704,10 @@ html a.tag:hover {
   }
 
   .cover-content .cover-avatar {
-    bottom: -2rem;
-    left: calc(50% - 2rem);
-    width: 4rem;
-    height: 4rem;
+    bottom: -2.5rem;
+    left: calc(50% - 2.5rem);
+    width: 5rem;
+    height: 5rem;
   }
 
 }
@@ -824,16 +824,12 @@ html a.tag:hover {
   margin-top: 2rem;
 }
 
-.loop-date {
-  float: right;
-}
-
 .loop-author img {
   width: 1.4rem;
   height: auto;
   border-radius: 50%;
   vertical-align: middle;
-  margin-right: .5rem;
+  margin-right: .25rem;
 }
 
 /* Medium screens */
@@ -860,7 +856,6 @@ html a.tag:hover {
 
 .pagination {
   font-size: .7rem;
-  font-weight: bold;
   color: #bbb;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -895,6 +890,7 @@ html a.tag:hover {
 .pagination-previous a {
   border: solid .15rem #ddd;
   border-radius: 10rem;
+  font-weight: bold;
   color: #5f5f5f;
   text-decoration: none;
   text-transform: uppercase;
@@ -1216,7 +1212,7 @@ figure.image img {
 .post-author-body {
   position: relative;
   border-top: solid .2rem #f2f2f2;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   padding-left: 7rem;
   padding-right: 2rem;
@@ -1225,7 +1221,7 @@ figure.image img {
 
 .post-author-avatar {
   position: absolute;
-  top: 2rem;
+  top: 3rem;
   left: 2rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -1339,6 +1335,71 @@ figure.image img {
     padding: 4rem 2rem;
   }
 
+}
+
+/***************************************************************************************************
+* Author
+***************************************************************************************************/
+
+.author-info {
+  text-align: center;
+  border-bottom: solid .2rem #f2f2f2;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.author-bio {
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+
+.author-meta {
+  font-size: .8rem;
+  color: #999;
+}
+
+.author-meta > span {
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.author-meta a {
+  color: inherit;
+  text-decoration: none;
+  transition: .2s color;
+}
+
+.author-meta a:hover {
+  color: #666;
+}
+
+.author-meta > span:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.author-location {
+  background-image: url('../images/map_marker.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: .9rem;
+  padding-left: 1.25rem;
+}
+
+.author-website {
+  background-image: url('../images/globe.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: .9rem;
+  padding-left: 1.25rem;
+}
+
+.author-posts {
+  background-image: url('../images/bar_chart.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: .9rem;
+  padding-left: 1.25rem;
 }
 
 /***************************************************************************************************

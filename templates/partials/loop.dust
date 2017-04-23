@@ -35,6 +35,7 @@
           </a>
 
           {! Post date !}
+          on
           <a href="{@url type="post" slug=slug/}" class="loop-date">
             {@date date=publishedAt format="LL"/}
           </a>

@@ -30,9 +30,7 @@
       {! Cover body !}
       <div class="cover-body">
         <div class="cover-content body-wrap">
-          <h1 class="cover-title">
-            {name}
-          </h1>
+          <h1 class="cover-title">{name}</h1>
           {! Tag descriptions are stored as markdown, so we use the |markdownToHtml filter to
             convert them to HTML, then the |s filter so they don't get escaped. !}
           {description|markdownToHtml|s}

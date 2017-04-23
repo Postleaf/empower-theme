@@ -31,10 +31,10 @@
       <div class="cover-content body-wrap">
         {^query}
           <h1 class="cover-title">Search</h1>
-          <p>What are you looking for?</p>
+          What are you looking for?
         {:else}
           <h1 class="cover-title">Results for “{query}”</h1>
-          <p>{@plural count=pagination.totalItems one="1 post" many="% posts" none="No posts"/}</p>
+          {@plural count=pagination.totalItems one="1 post" many="% posts" none="No posts"/}
         {/query}
       </div>
     </div>

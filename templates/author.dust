@@ -30,16 +30,39 @@
       {! Cover body !}
       <div class="cover-body">
         <div class="cover-content body-wrap">
+          Posts by
+          <h1 class="cover-title">{name}</h1>
+
+          {! Avatar !}
           {?avatar}
             <img class="cover-avatar" src={@dynamicImage src=avatar thumbnail="250"/} alt="{name}">
           {/avatar}
-          <h1 class="cover-title">
-            {name}
-          </h1>
-          <p>{@plural count=pagination.totalItems one="1 post" many="% posts" none="No posts"/}</p>
         </div>
       </div>
     </header>
+
+    <div class="author-info">
+      <div class="body-wrap">
+        <div class="author-bio">
+          {bio|markdownToHtml|s}
+        </div>
+        <div class="author-meta">
+          {?location}
+            <span class="author-location">
+              {location}
+            </span>
+          {/location}
+          {?website}
+            <span class="author-website">
+              <a href="{website}">{@formatUrl url=website hostname="true"/}</a>
+            </span>
+          {/website}
+          <span class="author-posts">
+            {@plural count=pagination.totalItems one="1 post" many="% posts" none="No posts"/}
+          </span>
+        </div>
+      </div>
+    </div>
   {/author}
 
   {! Include the post loop !}

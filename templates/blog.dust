@@ -29,7 +29,7 @@
     <div class="cover-body">
       <div class="cover-content body-wrap">
         <h1 class="cover-title">{Settings.title}</h1>
-        <p>{Settings.tagline}</p>
+        {Settings.tagline}
       </div>
     </div>
 
