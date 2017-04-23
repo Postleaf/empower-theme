@@ -1,7 +1,7 @@
 {! Use the default layout !}
 {>"layout"/}
 
-{! This is the body of the blog index, which will get rendered by the {+body/} of the layout !}
+{! This is the body of the page. It will get rendered where {+body/} appears in the layout. !}
 {<body}
 
   {! Switch to the author context !}
