@@ -1005,6 +1005,11 @@ html a.tag:hover {
 
 }
 
+/* Page posts (posts using the post.micro.dust template) */
+.page .post-title {
+  margin-bottom: 2rem;
+}
+
 /* Micro posts (posts using the post.micro.dust template) */
 .micro .cover.has-cover {
   height: 25vh;
