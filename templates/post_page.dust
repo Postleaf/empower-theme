@@ -11,7 +11,7 @@
       <header
         {?post.image}
           class="cover has-cover {@eq key=pagination.currentPage value=1}is-homepage{/eq}"
-          style="background-image: url('{@dynamicImage src=post.image width="2000" colorize="75,75,75"/}');"
+          style="background-image: url('{@dynamicImage src=post.image width="2000"/}');"
         {:else}
           class="cover no-cover"
         {/post.image}
@@ -27,18 +27,13 @@
         <button class="nav-toggle" type="button" role="button" aria-label="Toggle Navigation">
           <div class="navicon"><span hidden>Menu</span></div>
         </button>
-
-        {! Cover body !}
-        <div class="cover-body">
-          <div class="cover-content body-wrap">
-            {! The title helper is required and should only appear once on the page. Use it where
-              you want the post title to be editable in the editor. !}
-            <h1 class="cover-title">{@title editable="true"/}</h1>
-          </div>
-        </div>
       </header>
 
       <section class="{@postClass/} body-wrap">
+        {! The title helper is required and should only appear once on the page. Use it where
+          you want the post title to be editable in the editor. !}
+        <h1 class="cover-title">{@title editable="true"/}</h1>
+
         {! The content helper is required and should only appear once on the page. Use it where you
           want the post content to be editable in the editor. !}
         {@content editable="true"/}
