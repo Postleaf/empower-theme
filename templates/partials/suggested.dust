@@ -16,8 +16,6 @@
             <h2 class="post-suggested-title">{title}</h2>
             <div class="post-suggested-excerpt">
               Posted {@date date=publishedAt relative="true"/}
-              &middot;
-              {@readingTime/} min read
             </div>
           </div>
         </a>
@@ -39,8 +37,6 @@
             <h2 class="post-suggested-title">{title}</h2>
             <div class="post-suggested-excerpt">
               Posted {@date date=publishedAt relative="true"/}
-              &middot;
-              {@readingTime/} min read
             </div>
           </div>
         </a>
