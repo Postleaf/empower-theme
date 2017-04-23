@@ -28,7 +28,7 @@ html {
 
 body {
   height: 100%;
-  font-family: "Noto Serif", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.4;
   color: #484848;
@@ -230,7 +230,6 @@ pre {
 
 /* Share buttons */
 .share-button {
-  font-family: Montserrat, sans-serif;
   font-size: 0;
   color: white;
   text-align: center;
@@ -291,11 +290,11 @@ pre {
 html a.tag {
   background-color: #8cc152;
   color: white;
-  font-family: Montserrat, sans-serif;
   font-size: .6rem;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  padding: .25rem .5rem;
+  padding: .5rem .75rem;
   border-radius: .15rem;
   display: inline-block;
   transition: .2s background-color, .2s color;
@@ -410,7 +409,6 @@ html a.tag:hover {
   right: 0;
   bottom: 0;
   width: 18rem;
-  font-family: Montserrat, sans-serif;
   font-size: .9rem;
   color: #ddd;
   background-color: #222;
@@ -421,6 +419,7 @@ html a.tag:hover {
 }
 
 .nav h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: inherit;
   font-size: .8rem;
   text-transform: uppercase;
@@ -452,10 +451,6 @@ html a.tag:hover {
 }
 
 /* Logo, title, tagline */
-.nav-meta {
-  font-family: Montserrat, sans-serif;
-}
-
 .nav-title {
   font-size: 1.4rem;
   color: white;
@@ -463,6 +458,7 @@ html a.tag:hover {
 
 .nav-tagline {
   font-size: .8rem;
+  font-weight: bold;
 }
 
 .nav-logo img {
@@ -510,7 +506,6 @@ html a.tag:hover {
 /* Tag list */
 .nav-tags .tag {
   float: left;
-  padding: .5rem;
   margin-right: .25rem;
   margin-bottom: .25rem;
 }
@@ -723,9 +718,8 @@ html a.tag:hover {
 
 .footer {
   background: white;
-  font-family: Montserrat, sans-serif;
   font-size: .8rem;
-  color: #888;
+  color: #bbb;
   padding: 1rem;
 }
 
@@ -797,8 +791,8 @@ html a.tag:hover {
 .loop-item-featured::before {
   content: 'Featured';
   width: 10rem;
-  font-family: Montserrat, sans-serif;
-  font-size: .9rem;
+  font-size: .8rem;
+  font-weight: bold;
   text-transform: uppercase;
   background: #8cc152;
   position: absolute;
@@ -820,12 +814,13 @@ html a.tag:hover {
 }
 
 .loop-excerpt {
+  font-family: "Noto Serif", serif;
   line-height: 1.8;
 }
 
 .loop-meta {
-  font-family: Montserrat, sans-serif;
   font-size: .8rem;
+  font-weight: bold;
   color: #999;
   margin-top: 2rem;
 }
@@ -865,8 +860,8 @@ html a.tag:hover {
 ***************************************************************************************************/
 
 .pagination {
-  font-family: Montserrat, sans-serif;
   font-size: .7rem;
+  font-weight: bold;
   color: #bbb;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -942,6 +937,7 @@ html a.tag:hover {
 
 .post {
   position: relative;
+  font-family: "Noto Serif", serif;
   line-height: 1.8;
   padding-bottom: 2rem;
   margin-top: 3rem;
@@ -1023,7 +1019,6 @@ html a.tag:hover {
 }
 
 .micro-author {
-  font-family: Montserrat, sans-serif;
   font-size: .8rem;
   color: #bbb;
   margin-bottom: 4rem;
@@ -1063,10 +1058,11 @@ figure.image img {
 
 /* Captions */
 .post figure.image figcaption {
-  font-size: .7rem;
-  font-family: Montserrat, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
   color: #aaa;
   text-align: center;
+  margin-top: .5rem;
 }
 
 /* Left-aligned images */
@@ -1182,9 +1178,7 @@ figure.image img {
 
 /* Post share */
 .post-share {
-  font-family: Montserrat, sans-serif;
   font-size: .7rem;
-  color: #ccc;
   text-align: right;
   margin-top: 1rem;
   padding-left: 1rem;
@@ -1233,16 +1227,16 @@ figure.image img {
 }
 
 .post-author-role {
-  font-family: Montserrat, sans-serif;
   font-size: .8rem;
+  font-weight: bold;
   color: #999;
   text-transform: uppercase;
   margin-bottom: .25rem;
 }
 
 .post-author-name {
-  font-family: Montserrat, sans-serif;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .post-author-name a {
@@ -1250,7 +1244,6 @@ figure.image img {
 }
 
 .post-author-bio {
-  font-family: Montserrat, sans-serif;
   font-size: .8rem;
   color: #999;
   line-height: 1.8;
@@ -1258,8 +1251,9 @@ figure.image img {
 
 /* Suggested posts */
 .post-suggested-post {
-  font-family: Montserrat, sans-serif;
-  font-size: .8rem;
+  font-size: .7rem;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #484848;
   text-align: center;
   text-decoration: none;
@@ -1292,12 +1286,8 @@ figure.image img {
   padding: 8rem 4rem;
 }
 
-.post-suggested-subtitle {
-  text-transform: uppercase;
-  font-size: .7rem;
-}
-
 .post-suggested-title {
+  text-transform: none;
   color: #333;
   margin-bottom: 0rem;
 }
@@ -1341,7 +1331,6 @@ figure.image img {
 ***************************************************************************************************/
 
 .template-search .search-form {
-  font-family: Montserrat, sans-serif;
   font-size: .8rem;
   color: #888;
   text-align: center;
