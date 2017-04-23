@@ -11,7 +11,7 @@
       <header
         {?post.image}
           class="cover has-cover {@eq key=pagination.currentPage value=1}is-homepage{/eq}"
-          style="background-image: url('{@dynamicImage src=post.image width="2000" colorize="75,75,75"/}');"
+          style="background-image: url('{@dynamicImage src=post.image width="2000"/}');"
         {:else}
           class="cover no-cover"
         {/post.image}
