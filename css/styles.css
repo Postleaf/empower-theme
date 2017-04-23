@@ -290,7 +290,7 @@ pre {
 html a.tag {
   background-color: #8cc152;
   color: white;
-  font-size: .6rem;
+  font-size: .65rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -820,7 +820,6 @@ html a.tag:hover {
 
 .loop-meta {
   font-size: .8rem;
-  font-weight: bold;
   color: #999;
   margin-top: 2rem;
 }
