@@ -942,6 +942,18 @@ html a.tag:hover {
   margin-top: 3rem;
 }
 
+.post-title {
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.post-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
 .post a,
 .post strong {
   color: #383838;
@@ -1137,12 +1149,6 @@ figure.image img {
   height: 100%;
 }
 
-/* Post details */
-.post-details {
-  border-top: solid 1px #eee;
-  padding-top: 2rem;
-}
-
 /* Post tags */
 .post-tags {
   position: relative;
@@ -1209,32 +1215,33 @@ figure.image img {
 /* Post author section */
 .post-author-body {
   position: relative;
-  border-top: solid 1px #eee;
-  text-align: center;
-  padding-top: 4rem;
+  border-top: solid .2rem #f2f2f2;
+  padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 3rem;
+  padding-left: 7rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
 }
 
 .post-author-avatar {
   position: absolute;
-  top: -2rem;
-  left: calc(50% - 2rem);
-  width: 4rem;
-  height: 4rem;
+  top: 2rem;
+  left: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
 }
 
 .post-author-role {
   font-size: .8rem;
   font-weight: bold;
-  color: #999;
+  color: #bbb;
   text-transform: uppercase;
-  margin-bottom: .25rem;
+  margin-bottom: 0;
 }
 
 .post-author-name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -1245,7 +1252,22 @@ figure.image img {
 .post-author-bio {
   font-size: .8rem;
   color: #999;
-  line-height: 1.8;
+  line-height: 1.6;
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+
+  .post-author-body {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .post-author-avatar {
+    position: static;
+  }
+
 }
 
 /* Suggested posts */

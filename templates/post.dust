@@ -27,19 +27,14 @@
         <button class="nav-toggle" type="button" role="button" aria-label="Toggle Navigation">
           <div class="navicon"><span hidden>Menu</span></div>
         </button>
-
-        {! Cover body !}
-        <div class="cover-body">
-          <div class="cover-content body-wrap">
-            {! The title helper is required and should only appear once on the page. Use it where
-              you want the post title to be editable in the editor. !}
-            <h1 class="cover-title">{@title editable="true"/}</h1>
-            <p>{@date date=publishedAt format="LL"/} &middot; {@readingTime/} min read</p>
-          </div>
-        </div>
       </header>
 
       <section class="{@postClass/} body-wrap">
+        <h1 class="post-title">{@title editable="true"/}</h1>
+        <p class="post-meta">
+          {@date date=publishedAt format="LL"/} &middot; {@readingTime/} min read
+        </p>
+
         {! The content helper is required and should only appear once on the page. Use it where you
           want the post content to be editable in the editor. !}
         {@content editable="true"/}
