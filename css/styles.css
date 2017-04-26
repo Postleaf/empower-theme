@@ -643,7 +643,7 @@ html a.tag:hover {
 .template-post .cover.no-cover,
 .template-post-micro .cover.no-cover,
 .template-post-page .cover.no-cover {
-  height: auto;
+  min-height: 0;
   background: white;
   padding: 5rem 0 0 0;
 }
