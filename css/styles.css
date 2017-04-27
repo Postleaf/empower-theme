@@ -414,7 +414,7 @@ html a.tag:hover {
   background-color: #222;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  transform: translateX(18rem);
+  transform: translateX(9rem);
   transition: .4s transform;
 }
 
