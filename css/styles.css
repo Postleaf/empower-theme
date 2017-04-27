@@ -580,8 +580,6 @@ html a.tag:hover {
 .cover-body {
   text-align: center;
   vertical-align: middle;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
   display: table-cell;
 }
 
