@@ -1002,6 +1002,10 @@ html a.tag:hover {
     margin-bottom: 2rem;
   }
 
+  .post-title {
+    font-size: 2rem;
+  }
+
   .post blockquote {
     padding-left: 1rem;
     margin-left: 0;
