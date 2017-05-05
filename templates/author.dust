@@ -1,5 +1,5 @@
 {! Use the default layout !}
-{>"layout"/}
+{>"default"/}
 
 {! This is the body of the page. It will get rendered where {+body/} appears in the layout. !}
 {<body}
