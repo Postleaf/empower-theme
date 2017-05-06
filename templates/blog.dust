@@ -7,7 +7,7 @@
   {! Cover header !}
   <header
     {?Settings.cover}
-      class="cover {@eq key=pagination.currentPage value=1}cover-full{/eq} has-cover"
+      class="cover {?Request.isHomepage}cover-full{/Request.isHomepage} has-cover"
       style="background-image: url('{@dynamicImage src=Settings.cover width="2000" colorize="75,75,75"/}');"
     {:else}
       class="cover no-cover"
