@@ -1158,6 +1158,65 @@ figure.image img {
   height: 100%;
 }
 
+/* Embed cards */
+.post .embed-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  line-height: 1.4;
+  border: solid .25rem #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.post .embed-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Clearfix to prevent floated image from dipping below the card border */
+.post .embed-card::before,
+.post .embed-card::after {
+  content: ' ';
+  display: table;
+}
+
+.post .embed-card::after {
+  clear: both;
+}
+
+/* Embed card thumbnail image */
+.post .embed-card article img {
+  max-width: 8rem;
+  max-height: 8rem;
+  float: right;
+  padding-left: 1rem;
+}
+
+/* Embed card title */
+.post .embed-card h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: .75rem;
+}
+
+/* Embed card description */
+.post .embed-card p {
+  margin-bottom: .75rem;
+}
+
+/* Embed card footer */
+.post .embed-card footer {
+  color: #999;
+}
+
+.post .embed-card footer img {
+  max-width: 1rem;
+  max-height: 1rem;
+  vertical-align: text-top;
+  margin-right: .25rem;
+}
+
 /* Post tags */
 .post-tags {
   position: relative;
