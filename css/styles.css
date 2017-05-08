@@ -1101,12 +1101,8 @@ figure.image img {
 
 /* Center-aligned (cover) images */
 .post figure.image.align-center {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 80%;
+  margin: 0 auto 1rem auto;
 }
 
 /* Medium screens */
