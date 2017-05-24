@@ -14,6 +14,10 @@ Designed by Cory LaViska.
 2. From the Postleaf admin panel, go to Settings > Themes and select it from the list.
 3. Hit save.
 
+## Preview
+
+![Screenshot](http://postleaf.s3.amazonaws.com/website/images/empower_screenshot.png)
+
 ## Copyright & License
 
 Copyright 2017 A Beautiful Site, LLC - Released under the [MIT license](LICENSE.md).
