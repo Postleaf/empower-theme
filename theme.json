@@ -8,7 +8,7 @@
   "url": "https://www.postleaf.org/",
   "image": "images/theme.jpg",
   "customPostTemplates": [
-    { "name": "Micro", "filename": "post_micro.dust" },
-    { "name": "Page", "filename": "post_page.dust" }
+    { "name": "Micro", "filename": "micro.dust" },
+    { "name": "Page", "filename": "page.dust" }
   ]
 }
