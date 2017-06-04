@@ -38,7 +38,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -572,6 +572,7 @@ html a.tag:hover {
   min-height: 50vh;
   background-color: #f8f8f8;
   font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
   color: #888;
   display: table;
 }
