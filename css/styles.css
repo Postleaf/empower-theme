@@ -206,6 +206,7 @@ pre {
 
 /* Small screens */
 @media (max-width: 767px) {
+
   .row {
     display: block;
   }
@@ -216,6 +217,7 @@ pre {
     width: 100%;
     display: block;
   }
+
 }
 
 /* Clearfix */
@@ -1415,6 +1417,7 @@ figure.image img {
   .post-suggested-post:hover {
     transform: none;
   }
+
 }
 
 /***************************************************************************************************
@@ -1512,6 +1515,7 @@ figure.image img {
   .template-search .search-form input {
     width: 8rem;
   }
+
 }
 
 /***************************************************************************************************
