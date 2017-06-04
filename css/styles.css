@@ -1404,6 +1404,17 @@ figure.image img {
     padding: 4rem 2rem;
   }
 
+  /* Remove borders on mobile */
+  .post-suggested-next:not(:last-child),
+  .post-suggested-prev:not(:first-child) {
+    border: none;
+  }
+
+  /* Disable hover effects on mobile */
+  .post-suggested:hover .post-suggested-post:not(:hover),
+  .post-suggested-post:hover {
+    transform: none;
+  }
 }
 
 /***************************************************************************************************
