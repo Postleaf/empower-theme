@@ -577,6 +577,13 @@ html a.tag:hover {
   display: table;
 }
 
+/* Header height fix for Firefox */
+@-moz-document url-prefix() {
+    .cover {
+        height: 100px;
+    }
+}
+
 .cover.cover-full {
   min-height: 100vh;
 }
