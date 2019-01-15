@@ -574,7 +574,9 @@ html a.tag:hover {
   font-family: Montserrat, sans-serif;
   font-size: 1.2rem;
   color: #888;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cover.cover-full {
